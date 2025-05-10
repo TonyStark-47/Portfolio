@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Resume - Tony's Portfolio{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">My Resume</h2>
+
+<div class="text-center">
+    <iframe src="{{ url_for('view_resume') }}" width="100%" height="600px" class="border shadow"></iframe>
+    <br>
+    <a href="{{ url_for('download_resume') }}" class="btn btn-primary mt-3">Download Resume</a>
+</div>
+{% endblock %}

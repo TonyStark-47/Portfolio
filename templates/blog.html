@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Blog - Tony's Portfolio{% endblock %}
+
+{% block content %}
+<h2>My Blog</h2>
+{% for post in posts %}
+<div class="card my-4" data-aos="fade-up">
+    <div class="card-body">
+        <h4>{{ post.title }}</h4>
+        <small class="text-muted">{{ post.date }}</small>
+        <p class="mt-2">{{ post.content }}</p>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

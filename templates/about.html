@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}About Me - Tony's Portfolio{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Tony" class="img-fluid rounded-circle shadow" width="200">
+    </div>
+    <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Saurabh</strong>, a Python enthusiast and aspiring software developer with strong problem-solving skills and experience in building projects using Flask, SQL, and more.</p>
+        <p>I enjoy designing practical tools and web applications, solving coding challenges, and constantly learning new tech.</p>
+        
+        <h4 class="mt-4">Skills</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">🐍 Python, Flask, SQL</li>
+            <li class="list-group-item">🖥️ Data Structures & Algorithms (650+ LeetCode problems)</li>
+            <li class="list-group-item">💻 Linux (Ubuntu, Arch), Git, Bash</li>
+            <li class="list-group-item">🎯 Problem Solving, Team Collaboration</li>
+        </ul>
+        
+        <h4 class="mt-4">Interests</h4>
+        <p>Tech communities, open-source contributions, AI/ML, and mentoring others in Python.</p>
+    </div>
+</div>
+{% endblock %}
